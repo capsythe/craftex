@@ -19,6 +19,17 @@ document.querySelectorAll('nav a').forEach(anchor => {
 });
 
 window.addEventListener('scroll', function() {
+    const navLinks = document.querySelectorAll('nav ul li a');
+    const scrollPosition = window.scrollY;
+
+    navLinks.forEach(link => {
+        if (scrollPosition > 50) { // Adjust this value as needed
+            link.classList.add('scrolled');
+        } else {
+            link.classList.remove('scrolled');
+        }
+    });
+
     const nav = document.querySelector('nav');
     if (window.scrollY > 50) {
         nav.classList.add('scrolled');
