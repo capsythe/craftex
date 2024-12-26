@@ -1,184 +1,390 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apryl Blythe M. Lobrigas - Resume</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-    <nav>
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul class="nav-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section class="hero">
-        <div class="hero-content">
-            <div class="text-content">
-                <h1>Apryl Blythe M. Lobrigas</h1>
-                <p>Web/Software Developer</p>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Responsive portfolio website - Bedimcode</title>
+   </head>
+   <body>
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+               Blythe<span>Lobrigas</span>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link active-link">Home</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#about" class="nav__link">About</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#skills" class="nav__link">Skills</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#services" class="nav__link">Services</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#projects" class="nav__link">Projects</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#contact" class="nav__link">Contact</a>
+                  </li>
+               </ul>
+
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
             </div>
-            <img src="assets/images/full-profile.png" alt="Profile Picture">
-        </div>
-    </section>
-    <section id="about">
-        <div class="mx-auto">
-            <h2>About</h2>
-            <p>To utilize my skills towards a challenging career in growth-oriented and leading edge that will provide mutual benefits and where from I can utilize my capabilities to the fullest benefits of the organization and society. Especially, to promote positive atmosphere by employing my abilities and experience effectively and efficiently.</p>
-        </div>
-    </section>
-    <section id="skills">
-        <div class="mx-auto">
-            <h2>Key Competence</h2>
-            <ul>
-                <li>3D Modeling (Blender, AutoCAD and Sketchup)</li>
-                <li>Programming (C/C++, C#, Java, PHP, Python, Javascript, Elixir)</li>
-                <li>Frameworks (NodeJS, Angular, Express, Django, XAF, Phoenix, Flutter)</li>
-                <li>Microcontroller Interfacing and Programming (Arduino, Micro:bit, Crumble)</li>
-                <li>DBMS (MSSQL, MySQL, PostgreSQL)</li>
-                <li>Git</li>
-                <li>System Analysis, Design, Development, Implementation and Maintenance</li>
-            </ul>
-        </div>
-    </section>
-    <section id="education">
-        <div class="mx-auto">
-            <h2>Educational Attainment</h2>
-            <ul>
-                <li>Bachelor of Science in Information Technology, Davao Oriental State College of Science and Technology, 2016</li>
-                <li>High School, Calapagan National High School, 2010</li>
-            </ul>
-        </div>
-    </section>
-    <section id="experience">
-        <div class="mx-auto">
-            <h2>Work Experiences</h2>
-            <div class="job">
-                <h3>Bright Future International Training and Services</h3>
-                <p>January 2023 - March 2023</p>
-                <p>Bangkok, Thailand</p>
-                <ul>
-                    <li>Cover teacher for Math</li>
-                </ul>
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
             </div>
-            <div class="job">
-                <h3>Web/Software Developer, Travel Agency Tribes</h3>
-                <p>May 2022 - December 2022</p>
-                <p>London, Ontario, Canada</p>
-                <ul>
-                    <li>Create and test applications for websites</li>
-                    <li>Troubleshoot website problems</li>
-                    <li>Maintain and update websites</li>
-                    <li>Identifying areas for modification in existing programs and subsequently developing these modifications</li>
-                    <li>Writing and implementing efficient code</li>
-                </ul>
+         </nav>
+      </header>
+
+      <main class="main">
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__content">
+                  <div class="home__data">
+                     <h3 class="home__subtitle">
+                        Hello, <span>I'm</span>
+                     </h3>
+   
+                     <h1 class="home__title">Blythe Lobrigas</h1>
+   
+                     <h3 class="home__education">Web/Software Developer</h3>
+                     <p class="home__description">With knowledge in web development and design, I offer the best projects resulting in quality work.</p>
+                     <a href="#contact" class="button">Let's Talk</a>   
+                  </div>                  
+                  <div class="home__social">
+                     <a href="" target="_blank" class="home__social-link">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+                     <a href="" target="_blank" class="home__social-link">
+                        <i class="ri-linkedin-line"></i>
+                     </a>
+                     <a href="" target="_blank" class="home__social-link">
+                        <i class="ri-github-line"></i>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="home__img">
+                  <svg class="home__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
+                     <mask id="maskBlob" mask-type="alpha">
+                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                     </mask>
+                     <g mask="url(#maskBlob)">
+                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                  
+                        <rect x="37" width="476" height="630" fill="url(#pattern0)"/>
+                     </g>
+                  
+                     <rect x="37" width="476" height="300" fill="url(#pattern1)"/>
+                  
+                     <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <!-- Insert your profile (recommended size: 640 x 940) -->
+                        <image class="home__blob-img" id="imageBlob" width="640" height="925" href="assets/images/full-profile.png"/>
+                     </defs>
+                  </svg>
+               </div>
             </div>
-            <div class="job">
-                <h3>Software Developer, Expert Data Solutions, Inc.</h3>
-                <p>August 2021 - May 2022</p>
-                <p>Davao City, Philippines</p>
-                <ul>
-                    <li>Researching, designing, implementing and managing software programs</li>
-                    <li>Testing and evaluating new programs</li>
-                    <li>Identifying areas for modification in existing programs and subsequently developing these modifications</li>
-                    <li>Writing and implementing efficient code</li>
-                    <li>Determining operational practicality</li>
-                    <li>Maintaining and upgrading existing systems</li>
-                </ul>
+            
+
+            
+         </section>
+
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+               <div class="about__data">
+                  <h3 class="section__subtitle">
+                     My <span>Introducion</span>
+                  </h3>
+
+                  <h2 class="section__title">
+                     Information About Me
+                  </h2>
+
+                  <p class="about__description">
+                     I'm a front-end developer, I have knowledge in web development and design, I offer the best projects resulting in quality work.
+                  </p>
+
+                  <a href="#" class="button">Contact Me</a>
+               </div>
+
+               <div class="about__image">
+                  <svg class="about__blob" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <mask id="maskBorder" mask-type="alpha">
+                        <path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
+                        171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
+                        448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
+                        270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
+                        439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black"/>
+                     </mask>
+                     <g mask="url(#maskBorder)">
+                        <rect x="37" width="476" height="630" fill="url(#pattern2)"/>
+                        
+                        <path d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+                        192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
+                        580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
+                        40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
+                        175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black" stroke-width="10"/>
+                     </g>
+                  
+                     <rect x="37" width="476" height="300" fill="url(#pattern3)"/>
+                  
+                     <defs>
+                        <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <!-- Insert your profile (recommended size: 640 x 940) -->
+                        <image class="about__blob-img" id="imageBorder" width="640" height="940" href="assets/images/full-profile.png"/>
+                     </defs>
+                  </svg>
+               </div>
             </div>
-            <div class="job">
-                <h3>Web/Mobile Developer, Digital Access Solutions</h3>
-                <p>November 2021 - December 2021</p>
-                <p>Bangkok, Thailand</p>
-                <ul>
-                    <li>Create and test applications for websites</li>
-                    <li>Work with graphics and other designers</li>
-                    <li>Troubleshoot website problems</li>
-                    <li>Maintain and update websites</li>
-                    <li>Develop application programming interfaces (APIs) to support mobile functionality</li>
-                    <li>Using and adapting existing web applications for apps</li>
-                    <li>Work closely with colleagues to constantly innovate app functionality and design</li>
-                </ul>
+         </section>
+
+         <section class="skills section" id="skills">
+            <div class="skills__container container grid">
+               <div class="skills__data">
+                  <h3 class="section__subtitle">
+                     Favorite <span>Skills</span>
+                  </h3>
+
+                  <h2 class="section__title">My Skills</h2>
+
+                  <p class="skills__description">
+                     I have knowledge in web development and design, I offer the best projects resulting in quality work.
+                  </p>
+
+                  <a href="#" class="button">See Projects</a>
+               </div>
+
+               <div class="skills__content">
+                  <ol class="skills__group">
+                     <li class="skills__item">HTML & CSS</li>
+                     <li class="skills__item">JavaScript</li>
+                     <li class="skills__item">Bootstrap</li>
+                     <li class="skills__item">Tailwind</li>
+                  </ol>
+
+                  <ol class="skills__group" start="5">
+                     <li class="skills__item">Node.js</li>
+                     <li class="skills__item">Express</li>
+                     <li class="skills__item">Git & GitHub</li>
+                  </ol>
+               </div>
             </div>
-            <div class="job">
-                <h3>Computer Teacher/Computer Technician, Thai-Singapore International School</h3>
-                <p>June 2019 - October 2021</p>
-                <p>Samutprakarn, Thailand</p>
-                <ul>
-                    <li>Teach Microsoft Office Suites, Scratch Program, Java Program and Web Development</li>
-                    <li>Creates lesson plans that are appropriate for the age and abilities of the students in the class</li>
-                    <li>Evaluates students’ performances in class and on tests and provide feedback</li>
-                    <li>Assigns special projects to students and provides appropriate resources and learning materials for students</li>
-                    <li>Identifies varying teaching methods that work best for students who learn differently and encourages creativity in students</li>
-                    <li>Teach the basics of Robotics using Arduino and Crumble</li>
-                    <li>Maintaining and monitoring of the school’s computer systems and printers</li>
-                    <li>Tracking all documentation of hardware failure, installation, repair and replacement</li>
-                </ul>
+         </section>
+
+         <section class="services section" id="services">
+            <h3 class="section__subtitle">
+               My <span>Services</span>
+            </h3>
+
+            <h2 class="section__title">What I Do</h2>
+
+            <div class="services__container container grid">
+               <article class="services__card">
+                  <i class="ri-layout-3-line services__icon"></i>
+                  <h2 class="services__title">Web Developer</h2>
+
+                  <p class="services__description">
+                     Development of web interfaces and mobile applications, design made in figma, adobe xd and sketch.
+                  </p>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-pantone-line services__icon"></i>
+                  <h2 class="services__title">UI/UX Designer</h2>
+
+                  <p class="services__description">
+                     I offer design and development of web interfaces and mobile applications, design made in figma, adobe xd and sketch.
+                  </p>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-pen-nib-line services__icon"></i>
+                  <h2 class="services__title">Graphic Design</h2>
+
+                  <p class="services__description">
+                    I make designs at the client's request, banner design, posters, digital 
+                  </p>
+               </article>
             </div>
-            <div class="job">
-                <h3>Computer Teacher/Computer Technician, International Education Program (IEP) Sarasas Witaed Bangbon</h3>
-                <p>June 2017 - June 2019</p>
-                <p>Bangkok, Thailand</p>
-                <ul>
-                    <li>Teach Microsoft Office Suites, Java Program and Web Development</li>
-                    <li>Creates lesson plans that are appropriate for the age and abilities of the students in the class</li>
-                    <li>Evaluates students’ performances in class and on tests and provide feedback</li>
-                    <li>Assigns special projects to students and provides appropriate resources and learning materials for students</li>
-                    <li>Identifies varying teaching methods that work best for students who learn differently and encourages creativity in students</li>
-                    <li>Teach the basics of Robotics using Microbit</li>
-                    <li>Maintaining and monitoring of the school’s computer systems and printers</li>
-                </ul>
+         </section>
+
+         <section class="projects section" id="projects">
+            <h3 class="section__subtitle">My <span>Jobs</span></h3>
+
+            <h2 class="section__title">
+               Recent Projects
+            </h2>
+
+            <div class="projects__container container grid">
+               <article class="projects__card">
+                  <img src="assets/images/project-img-1.jpg" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Modern Website</h2>
+
+                     <a href="#" class="projects__button">View Demo <i class="ri-external-link-line"></i></a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/images/project-img-2.jpg" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Modern Website</h2>
+
+                     <a href="#" class="projects__button">View Demo <i class="ri-external-link-line"></i></a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/images/project-img-3.jpg" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Modern Website</h2>
+
+                     <a href="#" class="projects__button">View Demo <i class="ri-external-link-line"></i></a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/images/project-img-4.jpg" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Modern Website</h2>
+
+                     <a href="#" class="projects__button">View Demo <i class="ri-external-link-line"></i></a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/images/project-img-5.jpg" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Modern Website</h2>
+
+                     <a href="#" class="projects__button">View Demo <i class="ri-external-link-line"></i></a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/images/project-img-6.jpg" alt="projects image" class="projects__img">
+
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Modern Website</h2>
+
+                     <a href="#" class="projects__button">View Demo <i class="ri-external-link-line"></i></a>
+                  </div>
+               </article>
             </div>
-            <div class="job">
-                <h3>Software Developer, ExpreZoe IT Solutions (ExZITS)</h3>
-                <p>October 2016 - December 2017</p>
-                <p>Davao City, Philippines</p>
-                <ul>
-                    <li>Researching, designing, implementing and managing software programs</li>
-                    <li>Testing and evaluating new programs</li>
-                    <li>Identifying areas for modification in existing programs and subsequently developing these modifications</li>
-                    <li>Writing and implementing efficient code</li>
-                    <li>Determining operational practicality</li>
-                    <li>Maintaining and upgrading existing systems</li>
-                </ul>
+         </section>
+         
+         <section class="contact section" id="contact">
+            <h3 class="section__subtitle">
+               Get In <span>Touch</span>
+            </h3>
+
+            <h2 class="section__title">
+               Contact Me
+            </h2>
+
+            <div class="contact__container container grid">
+               <form action="" class="contact__form" id="contact-form">
+                  <div class="contact__group">
+                     <input type="text" name="user_name" required placeholder="Name" class="contact__input">
+                     <input type="text" name="user_email" required placeholder="Email" class="contact__input">
+                  </div>
+
+                  <textarea name="user_project" required placeholder="Message" class="contact__input"></textarea>
+
+                  <p class="contact__message" id="contact-message"></p>
+
+                  <button type="submit" class="button contact__button">Send Message</button>
+               </form>   
             </div>
-            <div class="job">
-                <h3>Freelance Graphic Designer</h3>
-                <ul>
-                    <li>Using software such as Adobe Photoshop, InDesign, and Illustrator to create visual designs</li>
-                    <li>Presenting draft designs to clients for feedback</li>
-                </ul>
+         </section>
+      </main>
+
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div>
+               <h1 class="footer__title">Blythe <span>Lobrigas</span></h1>
+
+               <h2 class="footer__education">Web/Software Developer</h2>
             </div>
-        </div>
-    </section>
-    <section id="resume">
-        <div class="mx-auto">
-            <h2>Resume</h2>
-            <a href="assets/files/Resume.pdf" download>Download Resume</a>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="mx-auto">
-            <h2>Contact</h2>
-            <p>Address: 35/441 Thawithong Village 3, Liap Klong Prasri Chareon Road Soi 8/4, Nongkhaem, Bangkok 10160</p>
-            <p>Mobile Number: +66 886 931 024</p>
-            <p>Email: <a href="mailto:capsythelobrigas@gmail.com">capsythelobrigas@gmail.com</a></p>
-        </div>
-    </section>
-    <button id="scrollToTop" class="scroll-to-top">&#8679;</button>
-    <footer>
-        <p>&copy; 2024 Apryl Blythe M. Lobrigas</p>
-    </footer>
-    <script src="assets/js/script.js"></script>
-</body>
+
+            <div class="footer__social">
+               <a href="https://www.instagram.com/blythe_lobrigas/" target="_blank" class="footer__social-link">
+                  <i class="ri-instagram-line"></i>
+               </a>
+               <a href="https://www.linkedin.com/in/blythe-lobrigas/" target="_blank" class="footer__social-link">
+                  <i class="ri-linkedin-line"></i>
+               </a>
+               <a href="https://github.com/BlytheLobrigas" target="_blank" class="footer__social-link">
+                  <i class="ri-github-line"></i>
+               </a>
+            </div>
+
+            <span class="footer__copy">
+               &#169; Blythe Lobrigas. All rights reserved
+            </span>
+         </div>
+      </footer>
+
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <script src="assets/js/scrollreveal.min.js"></script>
+      <script
+         type="text/javascript"
+         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
