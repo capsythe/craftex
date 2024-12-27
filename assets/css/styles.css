@@ -342,9 +342,6 @@ svg {
   width: 320px;
 }
 
-.about__blob-img{
-  width: 720px;
-}
 .about__blob path{
   stroke: var(--first-color);
 }
