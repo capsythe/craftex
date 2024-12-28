@@ -679,7 +679,7 @@ svg {
 
   .home__data,
   .about__data,
-  :is(.about__data) :is(.section__subtitle, section__title){
+  :is(.about__data) :is(.section__subtitle, .section__title){
     text-align: initial;
   }
 
