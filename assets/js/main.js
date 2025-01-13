@@ -2,13 +2,13 @@ const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
 
-if(navToggle){
+if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
     })
 }
 
-if(navClose){
+if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
@@ -38,20 +38,20 @@ const sendEmail = (e) => {
 
     // Check if the field has a value
     emailjs.sendForm('service_nzyfb1n', 'template_fhsy3i8', '#contact-form', '-QWqEKouulAb1mv7x')
-    .then(() => {
-        // Show sent message
-        contactMessage.textContent = 'Message sent successfully ✅'
+        .then(() => {
+            // Show sent message
+            contactMessage.textContent = 'Message sent successfully ✅'
 
-        // Remove message after five seconds
-        setTimeout(() => {
-            contactMessage.textContent = ''
-        }, 5000)
+            // Remove message after five seconds
+            setTimeout(() => {
+                contactMessage.textContent = ''
+            }, 5000)
 
-        contactForm.reset()
-    }, () => {
-        // Show error message
-        contactMessage.textContent = 'Message not sent ❌'
-    })
+            contactForm.reset()
+        }, () => {
+            // Show error message
+            contactMessage.textContent = 'Message not sent ❌'
+        })
 }
 
 contactForm.addEventListener('submit', sendEmail)
@@ -59,7 +59,8 @@ contactForm.addEventListener('submit', sendEmail)
 const scrollUp = () => {
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    window.scrollY >= 350 ? scrollUp.classList.add('show-scroll') : scrollUp.classList.remove('show-scroll');
+    console.log(window.scrollY)
+    window.scrollY >= 50 ? scrollUp.classList.add('show-scroll') : scrollUp.classList.remove('show-scroll');
 }
 window.addEventListener('scroll', scrollUp);
 
@@ -75,9 +76,9 @@ const scrollActive = () => {
 
             sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
 
-        if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
+        if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
             sectionsClass.classList.add('active-link')
-        }else{  
+        } else {
             sectionsClass.classList.remove('active-link')
         }
     })
@@ -93,7 +94,15 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.home__data, .home__social, .contact__container, .footer__container`)
-sr.reveal(`.home__img`, {origin: 'bottom'})
-sr.reveal(`.about__data, .skills__data`, {origin: 'left'})
-sr.reveal(`.about__image, .skills__content`, {origin: 'right'})
-sr.reveal(`.services__card, .projects__card`, {interval: 100})
+sr.reveal(`.home__img`, {
+    origin: 'bottom'
+})
+sr.reveal(`.about__data, .skills__data`, {
+    origin: 'left'
+})
+sr.reveal(`.about__image, .skills__content`, {
+    origin: 'right'
+})
+sr.reveal(`.services__card, .projects__card`, {
+    interval: 100
+})

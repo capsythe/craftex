@@ -611,7 +611,7 @@ svg {
 .scrollup{
   position: fixed;
   right: 1rem;
-  bottom: 3rem;
+  bottom: -3rem; /* Hide by default */
   display: inline-flex;
   background-color: var(--first-color);
   padding: 6px;
